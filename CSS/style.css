@@ -148,7 +148,7 @@ section#content-wrapper::before {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   width: 100%;
-  background-image: url(/images/keyboard.jpg);
+  background-image: url(../images/keyboard.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
