@@ -1,0 +1,164 @@
+/* CSS for Log In and Sign up Page */
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gold-color: #f7ce3e;
+  --black-color: #161918;
+  --white-color: #ffff;
+  --grey-color: rgb(224, 223, 223);
+  font-size: 16px;
+}
+
+section#login {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background-color: #bdc3c7;
+}
+
+.reg-btn {
+  color: var(--black-color);
+}
+
+.reg-btn:hover {
+  color: var(--white-color);
+}
+
+.grid-container {
+  display: grid;
+  place-items: center;
+}
+
+.login-form-banner, .signup-form-banner {
+  font-weight: 300;
+  width: 440px;
+  max-width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  padding: 50px;
+  color: var(--gold-color);
+  box-shadow: 4px solid #161918;
+}
+ 
+.login-form-banner {
+  top: 10%;
+}
+
+.signup-form-banner {
+  top: 2%;
+}
+
+.reg-title {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 900;
+    padding: 10px 20px;
+}
+
+.register-logo {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  color: var(--gold-color);
+  margin-left: 40px;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+.register-logo:hover {
+  color: var(--white-color);
+}
+
+.forgot {
+  color: var(--gold-color);
+  font-size: 1.2rem;
+  width: 160px;
+}
+
+.forgot:hover {
+  color: var(--white-color);
+}
+
+.social-media ul {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media ul li {
+  padding: 2px;
+  margin: 0 4px;
+  font-size: 1.8rem;
+}
+
+.social-media ul li i.bx {
+    color: var(--gold-color);
+    border: 1px solid var(--gold-color);
+    border-radius: 50%;
+    font-size: 1.8rem;
+}
+
+.social-media ul li i.bx:hover {
+    color: var(--white-color);
+    transform: rotate(36deg) scale(1.3);
+    border-color: var(--white-color);
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 7px;
+  padding-bottom: 16px;
+}
+
+.form-control input {
+  display: block;
+  border: 3px solid var(--gold-color);
+  outline: none;
+  border-radius: 15px;
+  padding: 12px;
+  background-color: var(--black-color);
+  width: 320px;
+  font-size: 1.2rem;
+  color: var(--gold-color);
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 16px;
+  right: 35px;
+}
+
+.form-control.success input {
+	border-color: chartreuse;
+}
+
+.form-control.error input {
+	border-color: red;
+}
+
+.form-control.success i.bx-check-double {
+  visibility: visible;
+  color: chartreuse;
+}
+
+.form-control.error i.bxs-error-circle {
+  visibility: visible;
+  color:red;
+}
+
+.form-control small {
+  position: absolute;
+  color: var(--gold-color);
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
